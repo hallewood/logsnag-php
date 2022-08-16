@@ -1,0 +1,21 @@
+{
+    "name": "roublez/logsnag-php",
+    "description": "A PHP SDK for the LogSnag API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dennis Prudlo",
+            "email": "mail@dennisprudlo.com"
+        }
+    ],
+    "require": {
+        "php": ">7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Roublez\\LogSnag\\": "src/"
+        }
+    }
+}
