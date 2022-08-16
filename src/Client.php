@@ -58,7 +58,7 @@ class Client {
     }
 
     /**
-     * Pushes an event to the specified project
+     * Published an event for the specified project
      *
      * @param string|array $eventOrPayload The event name of the log or the full payload array
      * @param string|null $description The description of the event (ignored when an array is passed as the first parameter)
@@ -67,7 +67,7 @@ class Client {
      * @param array|null $tags The list of tags (ignored when an array is passed as the first parameter)
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function event (string|array $eventOrPayload, ?string $description = null, ?string $icon = null, ?bool $notify = null, ?array $tags = null) : ResponseInterface {
+    public function publish (string|array $eventOrPayload, ?string $description = null, ?string $icon = null, ?bool $notify = null, ?array $tags = null) : ResponseInterface {
         $payload = is_array($eventOrPayload) ? $eventOrPayload : [
             'event' => $eventOrPayload,
             'description' => $description,
@@ -85,7 +85,7 @@ class Client {
     }
 
     /**
-     * Pushes an insight to the specified project
+     * Published an insight for the specified project
      *
      * @param string|array $titleOrPayload The string title of the insight or the full payload array
      * @param string|null $value The value of the insight (ignored when an array is passed as the first parameter)
