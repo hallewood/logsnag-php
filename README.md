@@ -1,10 +1,7 @@
 <div align="center">
     <h1>LogSnag PHP</h1>
 	<p>A PHP SDK for the LogSnag API – <a href="https://logsnag.com">logsnag.com</a></p>
-	<br>
-	<br>
 </div>
-
 
 ## Installation
 
