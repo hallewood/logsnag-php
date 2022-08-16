@@ -42,7 +42,7 @@ $logsnag->publish('Some Event', 'Description', '🥳', notify: true, [
 ```
 
 > **Warning**
-> The examples above only work if a default _project_ and default _channel_ were specified when instantiating. If these are not specified, an array with the corresponding data must be passed to the publish method:
+> The examples above only work if a default _project_ and default _channel_ are specified when instantiating. If these are not specified, an array with the corresponding data must be passed to the publish method:
 
 ```php
 $logsnag->publish([
